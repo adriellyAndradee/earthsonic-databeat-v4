@@ -1,0 +1,26 @@
+{
+ "name": "earthsonic",
+ "version": "0.1.0",
+ "private": true,
+ "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "test:parser": "node --experimental-strip-types test/parser.test.ts",
+  "test:player": "node --experimental-strip-types test/player.test.ts",
+  "test:select": "node --experimental-strip-types test/select.test.ts",
+  "test": "npm run test:parser && npm run test:player && npm run test:select && npm run test:firms",
+  "update-data": "node --experimental-strip-types scripts/update-data.mjs",
+  "test:firms": "node --experimental-strip-types test/firms.test.ts"
+ },
+ "dependencies": {
+  "next": "^15.0.0",
+  "react": "^19.0.0",
+  "react-dom": "^19.0.0"
+ },
+ "devDependencies": {
+  "typescript": "^5.5.0",
+  "@types/react": "^19.0.0",
+  "@types/node": "^22.0.0"
+ }
+}
